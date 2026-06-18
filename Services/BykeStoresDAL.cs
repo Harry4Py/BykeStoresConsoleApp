@@ -24,6 +24,7 @@ namespace BykeStoresConsoleApp.Services
             _Con = null;
             _cmd = null;
             rd = null;
+            
             _ConStr = str;
             staff = null;
         }
@@ -47,7 +48,7 @@ namespace BykeStoresConsoleApp.Services
                 // Step 5 - traverse through to read all the records
                 while (rd.Read())
                 {
-                    //Console.Write(rd["Staff_Id"] + ", " + rd["first_Name"] + ", " + rd["last_Name"] + ", " + rd["email"] + "\n");
+                    Console.Write(rd["Staff_Id"] + ", " + rd["first_Name"] + ", " + rd["last_Name"] + ", " + rd["email"] + "\n");
                 }
 
             }
